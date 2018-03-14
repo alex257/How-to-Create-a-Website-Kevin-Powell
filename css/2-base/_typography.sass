@@ -14,7 +14,7 @@ h1
 .title-large
   font-size: 3rem
   font-weight: $font-black
-  line-height: 1
+  line-height: .9
   span
     font-weight: $font-light
 
@@ -26,4 +26,16 @@ h2
   text-transform: uppercase
   letter-spacing: 2px
   line-height: 1
+
+.title-footer
+  text-transform: uppercase
+  letter-spacing: 3px
+  line-height: 1
+  &:before, &:after
+    content: ''
+    display: block
+    height: 1px
+    background: $text-inverse
+    opacity: 0.25
+    margin: 0.75em 0 
 

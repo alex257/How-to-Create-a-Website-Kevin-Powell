@@ -6,7 +6,15 @@
   right: 0
   transition: all ease-in-out 250ms
   overflow: hidden
-  
+  +mQ($md)
+    position: relative
+    flex: auto
+    background: none
+    margin-top: 1em
+    margin-left: 2em
+    text-align: right
+    left: 0
+
 
   ul 
     display: flex
@@ -14,12 +22,19 @@
     text-align: center
     justify-content: space-around
     height: 100vh
+    +mQ($md)
+      flex-direction: row
+      height: auto
+
 
   li 
     display: flex
     flex: 1 1 auto
     border-bottom: 1px solid rgba(black, 0.15)
-    
+    +mQ($md)
+      border: none
+      display: inline-block
+
 
   a 
     color: $text-inverse
@@ -27,18 +42,19 @@
     flex-basis: 100%
     align-items: center
     justify-content: center
+    +mQ($md)
+      justify-content: flex-end
     &:hover,
       background: rgba( black, .10)
+      +mQ($md)
+        background: none
+        color: darken($accent-color, 15%)
+        display: inline
 
     
     
 .main-nav.is-open
   left: 0
-
-  
-    
-
-    
 
 .nav-toggle
     display: block
@@ -47,6 +63,8 @@
     right: 1em 
     top: 1em
     cursor: pointer
+    +mQ($md)
+      display: none
 
 .hamburger, 
 .hamburger:before, 
