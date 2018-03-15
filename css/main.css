@@ -5,7 +5,7 @@
   .grid .col {
     flex: 0 0 100%;
     padding: 0 0.75em; }
-    @media (min-width: 750px) {
+    @media (min-width: 725px) {
       .grid .col:first-of-type {
         padding-left: 0; }
       .grid .col:last-of-type {
@@ -13,7 +13,7 @@
   .grid .col-full {
     flex: 0 0 100%; }
 
-@media (min-width: 750px) {
+@media (min-width: 725px) {
   .grid .col-1-3 {
     flex: 0 0 33.3333%; }
   .grid .col-2-3 {
@@ -44,7 +44,7 @@
 
 .lg-screen {
   display: none; }
-  @media (min-width: 750px) {
+  @media (min-width: 725px) {
     .lg-screen {
       display: block; } }
 
@@ -139,7 +139,7 @@ h2 {
   right: 0;
   transition: all ease-in-out 250ms;
   overflow: hidden; }
-  @media (min-width: 750px) {
+  @media (min-width: 725px) {
     .main-nav {
       position: relative;
       flex: auto;
@@ -154,7 +154,7 @@ h2 {
     text-align: center;
     justify-content: space-around;
     height: 100vh; }
-    @media (min-width: 750px) {
+    @media (min-width: 725px) {
       .main-nav ul {
         flex-direction: row;
         height: auto; } }
@@ -162,7 +162,7 @@ h2 {
     display: flex;
     flex: 1 1 auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-    @media (min-width: 750px) {
+    @media (min-width: 725px) {
       .main-nav li {
         border: none;
         display: inline-block; } }
@@ -172,12 +172,12 @@ h2 {
     flex-basis: 100%;
     align-items: center;
     justify-content: center; }
-    @media (min-width: 750px) {
+    @media (min-width: 725px) {
       .main-nav a {
         justify-content: flex-end; } }
     .main-nav a:hover {
       background: rgba(0, 0, 0, 0.1); }
-      @media (min-width: 750px) {
+      @media (min-width: 725px) {
         .main-nav a:hover {
           background: none;
           color: #8e1047;
@@ -193,7 +193,7 @@ h2 {
   right: 1em;
   top: 1em;
   cursor: pointer; }
-  @media (min-width: 750px) {
+  @media (min-width: 725px) {
     .nav-toggle {
       display: none; } }
 
@@ -263,35 +263,48 @@ footer {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
-@media(min-width: 750px) {
-  .hero {
-    padding-bottom: 0;
-    text-align: left;
-    height: 80vmin;
-    min-height: 800px; } }
+  @media (min-width: 725px) {
+    .hero {
+      padding-bottom: 0;
+      text-align: left;
+      height: 80vmin;
+      min-height: 800px; } }
+  @media (min-width: 725px) {
+    .hero .btn-primary {
+      margin-left: 0.6em; } }
+
 .hero-img {
   display: none; }
-@media(min-width: 750px) {
-  .hero-img {
-    display: block;
-    text-align: left; } }
+  @media (min-width: 725px) {
+    .hero-img {
+      display: block;
+      text-align: left;
+      padding-top: 2em; } }
+
 @media(min-width: 750px) {
   .hero-text {
     margin-top: 10vmax; } }
-.sales-points {
-  padding: 10vh 0 0; }
-  .sales-points .sales-point {
-    margin-bottom: 2.5em;
-    padding: 12vh 0; }
-    .sales-points .sales-point .col-full {
-      padding-top: 10vh; }
-    .sales-points .sales-point:last-child {
-      margin-bottom: 0; }
-  .sales-points .first {
-    margin-bottom: 1.5em;
-    margin-top: 2em; }
-  @media (min-width: 775px) {
-    .sales-points:first-of-type {
+@media (min-width: 495px) {
+  .title-large {
+    margin-top: 1em;
+    line-height: 1; } }
+
+@media (min-width: 495px) {
+  .text-intro {
+    margin-bottom: 0.9em; } }
+
+.sales-points h1 {
+  padding-top: 18vh; }
+.sales-points .sales-point {
+  margin-bottom: 2.5em;
+  padding: 3vh 0; }
+  .sales-points .sales-point:last-child {
+    margin-bottom: 0; }
+.sales-points .first {
+  margin-bottom: 1.5em;
+  margin-top: 2em; }
+  @media (min-width: 725px) {
+    .sales-points .first {
       margin-top: 0; } }
 
 .promo {
@@ -299,8 +312,15 @@ footer {
   .promo .bg-primary {
     text-align: left;
     padding-top: 7.5em;
-    padding-left: 7%;
     padding-bottom: 7.5em; }
+    @media (min-width: 725px) {
+      .promo .bg-primary h1 {
+        padding-left: 0.6em; }
+      .promo .bg-primary h2, .promo .bg-primary p {
+        padding-left: 1em; }
+      .promo .bg-primary .btn {
+        margin-left: 1em;
+        margin-top: 1.3em; } }
   .promo .img-box {
     background: url(../images/phone-in-hand.jpg);
     background-size: cover;
@@ -329,7 +349,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply; }
-  @media (min-width: 750px) {
+  @media (min-width: 725px) {
     .cta {
       padding: 10em 0; }
       .cta:before, .cta:after {

@@ -1,11 +1,13 @@
 .sales-points
-  padding: 10vh 0 0
+  h1
+    padding-top: 18vh
+
   .sales-point
     margin-bottom: 2.5em
-    padding: 12vh 0 
+    padding: 3vh 0 
     
-    .col-full 
-      padding-top: 10vh
+    //.col-full 
+      //padding-top: 10vh
     
     &:last-child
       margin-bottom: 0
@@ -13,9 +15,10 @@
   .first
     margin-bottom: 1.5em
     margin-top: 2em
-  
-  @media (min-width: 775px)
-    &:first-of-type
+    +mQ($md)
       margin-top: 0
+      
+
+      
 
   
