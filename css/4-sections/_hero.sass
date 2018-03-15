@@ -1,0 +1,39 @@
+.hero
+  background: linear-gradient(to right, $main-color, $secondary-color)
+  color: $text-inverse
+  padding-top: 8em
+  padding-bottom: 8em
+  text-align: center
+  +mQ($md)
+    padding-bottom: 0
+    text-align: left
+    height: 80vmin
+    min-height: 800px
+
+  .btn-primary
+    +mQ($md)
+      margin-left: .6em  
+
+  
+
+.hero-img
+  display: none
+  +mQ($md)
+    display: block
+    text-align: left
+    padding-top: 2em
+    
+.hero-text
+  @media(min-width: 750px)
+    margin-top: 10vmax
+    
+.title-large
+  +mQ($sm)
+    margin-top: 1em
+    line-height: 1
+
+.text-intro
+  +mQ($sm)
+    margin-bottom: .9em
+
+

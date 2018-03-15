@@ -1,93 +1,375 @@
-/*
-Error: Undefined variable: "$font1".
-        on line 6 of C:/Users/Sandra/Desktop/kevin powell sajt/css/2-base/_base.sass
-        from line 2 of C:/Users/Sandra/Desktop/kevin powell sajt/css/2-base/_base-dir.sass
-        from line 7 of C:\Users\Sandra\Desktop\kevin powell sajt\css\main.sass
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+.grid {
+  display: flex;
+  flex-wrap: wrap; }
+  .grid .col {
+    flex: 0 0 100%;
+    padding: 0 0.75em; }
+    @media (min-width: 725px) {
+      .grid .col:first-of-type {
+        padding-left: 0; }
+      .grid .col:last-of-type {
+        padding-right: 0; } }
+  .grid .col-full {
+    flex: 0 0 100%; }
 
-1: // This is the single file output by sass. It is intended to ONLY @import other files.
-2: 
-3: 
-4: // 1 - TOOLS
-5: 
-6: @import '1-plugins/plugins-dir'
-7: @import '2-base/base-dir'
-8: @import '3-modules/modules-dir'
-9: @import '4-pages/pages-dir'
+@media (min-width: 725px) {
+  .grid .col-1-3 {
+    flex: 0 0 33.3333%; }
+  .grid .col-2-3 {
+    flex: 0 0 66.6666%; }
+  .grid .col-1-2 {
+    flex: 0 0 50%; } }
+* {
+  box-sizing: border-box; }
+  * body {
+    color: #048ca8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center; }
+  * img {
+    max-width: 100%;
+    height: auto; }
+  * .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  * ul {
+    list-style-type: none; }
+  * a {
+    text-decoration: none; }
+  * unstyled-list {
+    padding: 0;
+    margin: 0; }
 
-Backtrace:
-C:/Users/Sandra/Desktop/kevin powell sajt/css/2-base/_base.sass:6
-C:/Users/Sandra/Desktop/kevin powell sajt/css/2-base/_base-dir.sass:2
-C:\Users\Sandra\Desktop\kevin powell sajt\css\main.sass:7
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$font1\".\A         on line 6 of C:/Users/Sandra/Desktop/kevin powell sajt/css/2-base/_base.sass\A         from line 2 of C:/Users/Sandra/Desktop/kevin powell sajt/css/2-base/_base-dir.sass\A         from line 7 of C:\Users\Sandra\Desktop\kevin powell sajt\css\main.sass\A \A 1: // This is the single file output by sass. It is intended to ONLY @import other files.\A 2: \A 3: \A 4: // 1 - TOOLS\A 5: \A 6: @import '1-plugins/plugins-dir'\A 7: @import '2-base/base-dir'\A 8: @import '3-modules/modules-dir'\A 9: @import '4-pages/pages-dir'"; }
+.lg-screen {
+  display: none; }
+  @media (min-width: 725px) {
+    .lg-screen {
+      display: block; } }
+
+.bg-primary {
+  background: #048ca8;
+  color: white;
+  padding: 5em 2.5em; }
+
+section {
+  margin-top: -75px; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 0.75em; }
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
+  margin: 0; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.title-large {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 0.9; }
+  .title-large span {
+    font-weight: 300; }
+
+.text-intro {
+  font-size: 1.2rem; }
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1; }
+
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1; }
+  .title-footer:before, .title-footer:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: white;
+    opacity: 0.25;
+    margin: 0.75em 0; }
+
+.main-header {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0; }
+
+.logo {
+  width: 25%;
+  min-width: 10rem;
+  max-width: 15rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 2.5em;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .btn:not(:last-of-type) {
+    margin-bottom: 0.6em; }
+
+.btn-primary {
+  background: #d31869;
+  color: white;
+  border: 2px solid #d31869; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: #8e1047;
+    border-color: #8e1047; }
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white; }
+  .btn-secondary:hover, .btn-secondary:focus {
+    background: white;
+    color: #048ca8; }
+
+.main-nav {
+  background: #d31869;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 0;
+  transition: all ease-in-out 250ms;
+  overflow: hidden; }
+  @media (min-width: 725px) {
+    .main-nav {
+      position: relative;
+      flex: auto;
+      background: none;
+      margin-top: 1em;
+      margin-left: 2em;
+      text-align: right;
+      left: 0; } }
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 100vh; }
+    @media (min-width: 725px) {
+      .main-nav ul {
+        flex-direction: row;
+        height: auto; } }
+  .main-nav li {
+    display: flex;
+    flex: 1 1 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+    @media (min-width: 725px) {
+      .main-nav li {
+        border: none;
+        display: inline-block; } }
+  .main-nav a {
+    color: white;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 725px) {
+      .main-nav a {
+        justify-content: flex-end; } }
+    .main-nav a:hover {
+      background: rgba(0, 0, 0, 0.1); }
+      @media (min-width: 725px) {
+        .main-nav a:hover {
+          background: none;
+          color: #8e1047;
+          display: inline; } }
+
+.main-nav.is-open {
+  left: 0; }
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer; }
+  @media (min-width: 725px) {
+    .nav-toggle {
+      display: none; } }
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 3px;
+  background: white; }
+
+.hamburger::before {
+  transform: translateY(-6px); }
+
+.hamburger::after {
+  transform: translateY(3px); }
+
+.hamburger.is-open {
+  transform: rotate(45deg); }
+  .hamburger.is-open:after {
+    transform: rotate(-90deg) translateX(3px); }
+  .hamburger.is-open:before {
+    opacity: 0; }
+
+footer {
+  background: #444;
+  color: white;
+  padding: 4em 0;
+  position: relative; }
+  footer:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.05;
+    background: url(../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  footer a {
+    color: white; }
+
+.social-links {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+  opacity: 0.8;
+  margin: 0.7em 0; }
+
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto; }
+  .nav-footer a {
+    font-weight: 700; }
+
+.container-footer {
+  max-width: 25em; }
+
+.hero {
+  background: linear-gradient(to right, #048ca8, #16db93);
+  color: white;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center; }
+  @media (min-width: 725px) {
+    .hero {
+      padding-bottom: 0;
+      text-align: left;
+      height: 80vmin;
+      min-height: 800px; } }
+  @media (min-width: 725px) {
+    .hero .btn-primary {
+      margin-left: 0.6em; } }
+
+.hero-img {
+  display: none; }
+  @media (min-width: 725px) {
+    .hero-img {
+      display: block;
+      text-align: left;
+      padding-top: 2em; } }
+
+@media(min-width: 750px) {
+  .hero-text {
+    margin-top: 10vmax; } }
+@media (min-width: 495px) {
+  .title-large {
+    margin-top: 1em;
+    line-height: 1; } }
+
+@media (min-width: 495px) {
+  .text-intro {
+    margin-bottom: 0.9em; } }
+
+.sales-points h1 {
+  padding-top: 18vh; }
+.sales-points .sales-point {
+  margin-bottom: 2.5em;
+  padding: 3vh 0; }
+  .sales-points .sales-point:last-child {
+    margin-bottom: 0; }
+.sales-points .first {
+  margin-bottom: 1.5em;
+  margin-top: 2em; }
+  @media (min-width: 725px) {
+    .sales-points .first {
+      margin-top: 0; } }
+
+.promo {
+  padding: 10vh 0; }
+  .promo .bg-primary {
+    text-align: left;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em; }
+    @media (min-width: 725px) {
+      .promo .bg-primary h1 {
+        padding-left: 0.6em; }
+      .promo .bg-primary h2, .promo .bg-primary p {
+        padding-left: 1em; }
+      .promo .bg-primary .btn {
+        margin-left: 1em;
+        margin-top: 1.3em; } }
+  .promo .img-box {
+    background: url(../images/phone-in-hand.jpg);
+    background-size: cover;
+    background-position: center; }
+
+.title-box {
+  background: #d31869;
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 90%;
+  transform: translateY(20%); }
+@media(min-width: 495px) {
+  .title-box {
+    transform: translateY(50%); } }
+@media(min-width: 750px) {
+  .title-box {
+    max-width: 700px; } }
+.cta {
+  color: white;
+  padding: 4em 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #16db93;
+  background-image: url(../images/call-to-action-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply; }
+  @media (min-width: 725px) {
+    .cta {
+      padding: 10em 0; }
+      .cta:before, .cta:after {
+        content: "";
+        display: block;
+        background: #d31869;
+        position: absolute;
+        width: 100%;
+        border: 1em solid white; }
+      .cta:before {
+        top: 0;
+        bottom: -1em;
+        transform: skewX(60deg);
+        left: -100%; }
+      .cta:after {
+        top: -1em;
+        bottom: 0;
+        transform: skewX(60deg);
+        right: -100%; }
+      .cta .container-cta {
+        width: 50%; } }
+
+/*# sourceMappingURL=main.css.map */

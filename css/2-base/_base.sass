@@ -1,0 +1,40 @@
+*
+  box-sizing: border-box
+  
+  body
+    color: $text-main 
+    +font($font-normal)
+    text-align: center
+    
+
+  img 
+    max-width: 100%
+    height: auto
+  
+  .container
+    width: 95%
+    max-width: 1200px
+    margin: 0 auto
+
+  ul 
+    list-style-type: none
+  
+  a 
+    text-decoration: none
+
+  unstyled-list
+    padding: 0
+    margin: 0
+
+.lg-screen
+  display: none
+  +mQ($md)
+    display: block
+
+.bg-primary
+  background: $main-color
+  color: $text-inverse
+  padding: 5em 2.5em
+
+section 
+  margin-top: -75px
